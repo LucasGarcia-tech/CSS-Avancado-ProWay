@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+body .botao-hover, body .botao-ripple {
+  margin-bottom: 20px;
+}
+body .botao-hover {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+body .botao-hover:hover {
+  background-color: #2980b9;
+}
+body .botao-ripple {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+body .botao-ripple:hover {
+  background-color: #2980b9;
+}
+body .botao-ripple .ripple {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: efeitoRipple 0.5s linear;
+}
+@keyframes efeitoRipple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

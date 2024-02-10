@@ -1,0 +1,102 @@
+$cor-primaria : #2ecc71;
+$cor-secundaria : #3498db;
+$cor-terciaria : #e74c3c;
+
+$fonte-titulo : 'Arial', 'sans-serif';
+$fonte-corpo : 'Helvetica','sans-serif';
+
+
+.header {
+    background-color: $cor-primaria;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: $fonte-titulo;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .article{
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+
+        .article-title {
+            color:$cor-primaria;
+            font-size : 24px;
+            font-family: $fonte-titulo;
+        }
+
+        .article-content {
+            color: #333;
+            font-family: $fonte-titulo;
+        }
+
+     }
+
+
+     .artigos-relacionados {
+        h2{
+            color: $cor-secundaria;
+        }
+
+        .fotos {
+            display: flex;
+
+            .foto{
+            flex: 1;
+            margin-right: 10px;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+
+            &.opacidade{
+                background-image:url('https://articles-images.sftcdn.net/wp-content/uploads/sites/7/2023/12/Big-Bang-Theory-spin-off.jpg');
+
+                transition: opacity 0.5s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+
+            &.flip{
+                background-image: url('https://www.omelete.com.br/webstories/derivado-the-big-bang-theory/assets/2.jpeg');
+
+                transition: transform 0.5s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: rotateY(180deg);
+    
+                }
+            }
+
+            &.scale{
+                background-image: url('https://static.wikia.nocookie.net/thebigbangtheory/images/5/5c/Quarta-temporada-the-big-bang-theory.jpg/revision/latest/scale-to-width-down/1200?cb=20160122190457&path-prefix=pt-br');
+
+                transition: transform 0.5s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.5);
+                }
+
+                
+            }
+
+        }
+      }
+     }
+     
+    
+
+}

@@ -1,0 +1,11 @@
+.fade-in-out {
+  width: 500px;
+  height: 500px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in-out:hover {
+  cursor: cell;
+  opacity: 0;
+}/*# sourceMappingURL=Luffy.css.map */

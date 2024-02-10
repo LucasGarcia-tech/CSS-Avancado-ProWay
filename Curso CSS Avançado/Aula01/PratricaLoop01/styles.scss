@@ -1,0 +1,17 @@
+$cores: #ff5733,#33ff57,#5733ff,#33e3ff,#ff3373;
+
+@for $i from 1 through length($cores) {
+    .cor-#{$i} {
+        background-color: nth($cores,$i);
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        display: inline-block;
+
+        &:hover{
+
+            background-color: white;
+
+        }
+    }
+}   

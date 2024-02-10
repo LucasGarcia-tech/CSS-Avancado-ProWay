@@ -1,0 +1,34 @@
+$corContainer:pink;
+$tamanhoQuadrado: 100px;
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: $corContainer;
+}
+
+.quadrado {
+    width: $tamanhoQuadrado;
+    height: $tamanhoQuadrado;
+    background-color: blue;
+    margin : 0 20px;
+    text-align: center;
+    line-height: $tamanhoQuadrado;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.escala:hover {
+        transform: scale(1.5);
+        
+    }
+
+    &.rotacao:hover {
+        transform: rotate(45deg);
+    }
+
+}

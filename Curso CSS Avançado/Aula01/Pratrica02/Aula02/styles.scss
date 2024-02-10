@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+
+        h1 {
+            margin: 0;
+
+
+        }
+    }
+
+    .menu {
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+
+                    &:hover {
+                        text-decoration: underline;
+                        background-color: red;
+                        border-radius: 5px;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .content{
+        padding: 20px;
+
+        .botao{
+            background-color: #3498db;
+            color: white;   
+            padding: 10px 20px;
+            border: none;
+            transition: background-color 0.3s ease;
+            
+            &:hover{
+                background-color: #2980b9;
+
+            }
+
+        }
+
+        .campo-input{
+            border: 1px solid #ccc  ;
+            padding: 5px;   
+
+            &:focus{
+                border-color: #3498db;
+                outline: none;
+            }
+        }
+    
+
+    }
+
+}

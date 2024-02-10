@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+.container header h1 {
+  margin: 0;
+}
+.container .menu ul {
+  list-style: none;
+  padding: 0;
+}
+.container .menu ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.container .menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.container .menu ul li a:hover {
+  text-decoration: underline;
+  background-color: red;
+  border-radius: 5px;
+}
+.container .content {
+  padding: 20px;
+}
+.container .content .botao {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.container .content .botao:hover {
+  background-color: #2980b9;
+}
+.container .content .campo-input {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.container .content .campo-input:focus {
+  border-color: #3498db;
+  outline: none;
+}/*# sourceMappingURL=styles.css.map */

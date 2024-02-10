@@ -1,0 +1,58 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.botao{
+
+    
+    padding: 20px 10px;
+    background-color: aquamarine;
+    border: none;
+
+    transition: 0.5s;
+
+
+    &:hover{
+        background-color: aqua;
+        cursor: pointer;
+
+   
+    }
+
+}
+
+    .imagem {
+        width:300px;   
+        height:300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: transform 0.5s  ease;
+        
+        &:hover{
+            transform: scale(1.5);
+        }
+        
+
+    
+    }
+
+
+.dale {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.shape {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #3498db;
+
+
+
+}

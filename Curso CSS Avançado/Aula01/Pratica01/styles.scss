@@ -1,0 +1,53 @@
+$cor-primaria : #2ecc71;
+$cor-secundaria:#e74c3c;
+$cor-container: #333;
+
+
+
+.header {
+    background-color: $cor-primaria ;
+    color : white;
+    padding: 20px;
+    text-align: center;
+    
+
+}
+
+.content {
+    padding: 20px;
+}
+
+.paragrafo {
+    background-color: $cor-secundaria;
+    font-size: 18px;
+
+}
+
+.container {
+    background-color: $cor-container ;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .menu {
+        ul{
+            list-style: none;
+            padding: 0;
+
+        
+
+            li{
+                display: inline-block;
+                margin-right:10px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+
+
+            }
+        }   
+    }
+    
+
+}

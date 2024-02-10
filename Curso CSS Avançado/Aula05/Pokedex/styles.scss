@@ -1,0 +1,159 @@
+$background-color : #f2f2f2;
+$header-color : #79a3d4;
+$footer-color : black;
+
+@mixin background($cor) {
+    background-color: $cor;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);   
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @include background($background-color);
+    margin : 0;
+    padding: 0;
+
+    
+}
+
+.header {
+    @include background($header-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+
+    h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+}
+
+.pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    padding: 20px;
+
+    .pokemon{
+       
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;  
+        text-align: center;
+        @include box-shadow;    
+        width:30%;
+        transition: transform 0.3s ease;
+
+        
+
+        &:hover {
+                transform: scale(1.2);
+        }   
+
+        img {
+            width: 150px;
+            height: 150px;
+            
+
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 20px;
+            color : #333
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #666;
+        }
+
+            
+
+    }
+
+}
+
+.botao {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px
+
+    
+
+}
+
+.planta{
+    @include background(#00FA9A);   
+}
+
+.fogo{
+    @include background(orange); 
+}
+
+.agua{
+    @include background(#00BFFF); 
+}
+
+
+.footer{
+    @include background($footer-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        margin: 0;
+        
+    }
+}
+
+// Responsividade para Tablets  
+
+@media screen and (max-width : 768px) {
+    .pokedex .pokemon {
+        width: 45%;
+    }
+}
+
+//Responsividade para Mobile
+
+@media screen and (max-width: 480px) {
+    .pokedex .pokemon {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .pokedex .pokemon img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .pokedex .pokemon h2 {
+        font-size: 16px;
+        
+    }
+
+    .pokemon .pokemon p {
+        font-size: 14px;
+    }
+
+}
+

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: pink;
+}
+
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  margin: 0 20px;
+  text-align: center;
+  line-height: 100px;
+  transition: transform 0.3s ease;
+}
+.quadrado:hover {
+  cursor: pointer;
+}
+.quadrado.escala:hover {
+  transform: scale(1.5);
+}
+.quadrado.rotacao:hover {
+  transform: rotate(45deg);
+}/*# sourceMappingURL=styles.css.map */

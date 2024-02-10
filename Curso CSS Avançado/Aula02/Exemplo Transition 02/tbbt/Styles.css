@@ -1,0 +1,68 @@
+.header {
+  background-color: #2ecc71;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", "sans-serif";
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-content .article {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.main-content .article .article-title {
+  color: #2ecc71;
+  font-size: 24px;
+  font-family: "Arial", "sans-serif";
+}
+.main-content .article .article-content {
+  color: #333;
+  font-family: "Arial", "sans-serif";
+}
+.main-content .artigos-relacionados h2 {
+  color: #3498db;
+}
+.main-content .artigos-relacionados .fotos {
+  display: flex;
+}
+.main-content .artigos-relacionados .fotos .foto {
+  flex: 1;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main-content .artigos-relacionados .fotos .foto.opacidade {
+  background-image: url("https://articles-images.sftcdn.net/wp-content/uploads/sites/7/2023/12/Big-Bang-Theory-spin-off.jpg");
+  transition: opacity 0.5s ease;
+}
+.main-content .artigos-relacionados .fotos .foto.opacidade:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.main-content .artigos-relacionados .fotos .foto.flip {
+  background-image: url("https://www.omelete.com.br/webstories/derivado-the-big-bang-theory/assets/2.jpeg");
+  transition: transform 0.5s ease;
+}
+.main-content .artigos-relacionados .fotos .foto.flip:hover {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.main-content .artigos-relacionados .fotos .foto.scale {
+  background-image: url("https://static.wikia.nocookie.net/thebigbangtheory/images/5/5c/Quarta-temporada-the-big-bang-theory.jpg/revision/latest/scale-to-width-down/1200?cb=20160122190457&path-prefix=pt-br");
+  transition: transform 0.5s ease;
+}
+.main-content .artigos-relacionados .fotos .foto.scale:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}/*# sourceMappingURL=Styles.css.map */
